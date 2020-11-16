@@ -25,7 +25,7 @@ module.exports = {
     config: true,
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
   },
   rules: {
     'prefer-template': ERROR,
