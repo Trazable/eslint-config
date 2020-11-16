@@ -8,6 +8,14 @@
     "trazable"
   ],
   "author": "trazable",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trazable/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Trazable/eslint-config/issues"
+  },
+  "homepage": "https://github.com/Trazable/eslint-config#readme",
   "license": "ISC",
   "dependencies": {
     "eslint": "^7.13.0",
