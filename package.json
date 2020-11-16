@@ -1,6 +1,6 @@
 {
   "name": "@trazable/eslint-config",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Trazable global eslint configuration",
   "main": "index.js",
   "keywords": [
