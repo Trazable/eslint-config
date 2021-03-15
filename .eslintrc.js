@@ -10,8 +10,9 @@ module.exports = {
     node: true,
     mocha: true,
   },
-  plugins: ['unicorn', 'prettier'],
-  extends: ['standard', 'prettier', 'prettier/standard', 'prettier/unicorn'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['unicorn', '@typescript-eslint', 'prettier'],
+  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'prettier'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
