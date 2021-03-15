@@ -11,7 +11,7 @@ module.exports = {
     mocha: true,
   },
   plugins: ['unicorn', 'prettier'],
-  extends: ['standard', 'prettier', 'prettier/standard', 'prettier/unicorn'],
+  extends: ['standard', 'prettier'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
