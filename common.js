@@ -5,21 +5,12 @@ const ERROR = 2
 
 module.exports = {
   env: {
-    commonjs: true,
-    es6: true,
-    node: true,
-    mocha: true,
+    es2021: true,
   },
-  parser: '@typescript-eslint/parser',
-  plugins: ['unicorn', '@typescript-eslint', 'prettier'],
-  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'prettier'],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-    config: true,
-  },
+  plugins: ['unicorn', 'prettier'],
+  extends: ['standard', 'prettier'],
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
   },
   rules: {
     // eslint base rules
