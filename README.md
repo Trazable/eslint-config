@@ -21,3 +21,10 @@ To use the eslint trazable module you must follow the next steps:
       "extends": ["@trazable/eslint-config"]
     }
   ```
+
+To use specific eslint configurations:
+```javascript
+  "eslintConfig":{
+    "extends": ["@trazable/eslint-config/typescript", "@trazable/eslint-config/backend" ...]
+  }
+```
