@@ -27,7 +27,8 @@
     "test": "lerna run test",
     "lint": "eslint \"packages/**/*.ts\" \"shared/**/*.ts\" --fix",
     "clean": "rm -rf packages/*/node_modules packages/*/build ",
-    "prepare": "husky install config/.husky"
+    "prepare": "husky install config/.husky",
+    "release": "npm install && npm run bootstrap && npm run test && npm run lint && npm run build && lerna publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",

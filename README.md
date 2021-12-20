@@ -127,8 +127,6 @@ Steps to contribute:
 
 Steps to publish new version to npm:
 - Clone the repo.
-- Run `npm i`.
-- Run `npm run bootstrap`.
-- Run `npm run build`.
-- Run `lerna publish`
+- Run `npm run release`.
+- Follow [lerna promps](https://github.com/lerna/lerna/tree/main/commands/publish#readme)
 
