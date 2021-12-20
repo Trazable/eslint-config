@@ -19,6 +19,7 @@
     "homepage": "https://github.com/Trazable/eslint-config#readme",
     "license": "ISC",
     "main": "build/index.js",
+    "files": ["build"],
     "scripts": {
         "build": "rollup --config rollup.config.js",
         "clean": "rm -Rf node_modules build"

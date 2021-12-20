@@ -124,3 +124,14 @@ Steps to contribute:
 - git push to your fork.
 - Create a pull request into the main repo.
 
+## Publish
+
+### Documentation
+
+Steps to publish new version to npm:
+- Clone the repo.
+- Run `npm i`.
+- Run `npm run bootstrap`.
+- Run `npm run build`.
+- Run `lerna publish`
+
