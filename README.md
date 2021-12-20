@@ -10,18 +10,17 @@
 - 🧩 Modular usage. Easily combine presets for the different technologies.
 - 🔗 Almost conflict free.
 
-Here is the example for TypeScript React project:
+Here is the example for TypeScript Node project:
 
 ```json
-.eslintrc
+// .eslintrc
 {
   "extends": [
-    "@trazable/patch",
-    "@trazable/base",
-    "@trazable/typescript",
-    "@trazable/react"
-  ],
-  "parser": "@typescript-eslint/parser"
+    "@trazable/eslint-config-patch",
+    "@trazable/eslint-config-base",
+    "@trazable/eslint-config-typescript",
+    "@trazable/eslint-config-node"
+  ]
 }
 ```
 
@@ -32,18 +31,16 @@ There are two basic presets - patch and base.
 Almost every `@trazable/eslint-config` preset has some plugins in its dependencies and uses them from there. Default ESLint module resolution behavior doesn't allow doing it this way. The patch preset fixes this problem. It uses `@rushstack/eslint-patch` under the hood.
 The base preset encapsulates some base plugins and rules. It is required for using other `@trazable/eslint-config` presets.
 The other presets are optional. Select them depending on your goals and project stack.
-For example, the config for React + TypeScript project:
+For example, the config for React project:
 
 ``` json
 // .eslintrc
 {
   "extends": [
-    "@trazable/patch",
-    "@trazable/base",
-    "@trazable/typescript",
-    "@trazable/react",
-  ],
-  "parser": "@typescript-eslint/parser"
+    "@trazable/eslint-config-patch",
+    "@trazable/eslint-config-base",
+    "@trazable/eslint-config-react",
+  ]
 }
 ```
 
@@ -71,7 +68,7 @@ require("@trazable/eslint-config-patch")
 
 module.exports = {
   extends: [
-    "@trazable/base",
+    "@trazable/eslint-config-base",
   ],
   parser: "@babel/eslint-parser",
 }
@@ -84,9 +81,9 @@ Specify your tsconfig.json location manually:
 // .eslintrc
 {
   "extends": [
-    "@trazable/patch",
-    "@trazable/base",
-    "@trazable/typescript"
+    "@trazable/eslint-config-patch",
+    "@trazable/eslint-config-base",
+    "@trazable/eslint-config-typescript"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -102,9 +99,9 @@ const path = require('path')
 
 module.exports = {
   extends: [
-    '@trazable/patch',
-    '@trazable/base',
-    '@trazable/typescript',
+    '@trazable/eslint-config-patch',
+    '@trazable/eslint-config-base',
+    '@trazable/eslint-config-typescript',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
