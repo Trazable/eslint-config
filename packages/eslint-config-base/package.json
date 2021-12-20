@@ -17,7 +17,7 @@
         "url": "https://github.com/Trazable/eslint-config/issues"
     },
     "homepage": "https://github.com/Trazable/eslint-config#readme",
-    "license": "ISC",
+    "license": "MIT",
     "main": "build/index.js",
     "files": [
         "build"
