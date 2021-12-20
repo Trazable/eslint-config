@@ -1,17 +1,17 @@
 {
     "name": "@trazable/eslint-config-base",
-    "version": "0.0.0",
+    "version": "1.0.0-alpha.0",
     "keywords": [
-      "eslint",
-      "trazable"
+        "eslint",
+        "trazable"
     ],
     "author": "trazable",
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Trazable/eslint-config.git"
+        "type": "git",
+        "url": "git+https://github.com/Trazable/eslint-config.git"
     },
     "bugs": {
-      "url": "https://github.com/Trazable/eslint-config/issues"
+        "url": "https://github.com/Trazable/eslint-config/issues"
     },
     "homepage": "https://github.com/Trazable/eslint-config#readme",
     "license": "ISC",
