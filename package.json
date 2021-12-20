@@ -1,7 +1,9 @@
 {
   "name": "@trazable/eslint-config",
   "description": "A collection of useful Trazable eslint configs",
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "workspaces": [
     "packages/*"
   ],
@@ -18,7 +20,7 @@
     "url": "https://github.com/Trazable/eslint-config/issues"
   },
   "homepage": "https://github.com/Trazable/eslint-config#readme",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
