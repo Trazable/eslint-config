@@ -1,0 +1,16 @@
+{
+  "name": "@trazable/eslint-config-typescript",
+  "version": "0.0.0",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "clean": "rm -Rf node_modules build"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0"
+  }
+}

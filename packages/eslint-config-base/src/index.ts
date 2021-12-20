@@ -1,9 +1,6 @@
-//   ╔═╗╔═╗╦  ╦╔╗╔╔╦╗┬─┐┌─┐
-//   ║╣ ╚═╗║  ║║║║ ║ ├┬┘│
-//  o╚═╝╚═╝╩═╝╩╝╚╝ ╩ ┴└─└─┘
-const ERROR = 2
+import { severity } from '../../../shared'
 
-module.exports = {
+export default {
   env: {
     es2021: true,
   },
@@ -14,11 +11,11 @@ module.exports = {
   },
   rules: {
     // eslint base rules
-    'prefer-template': ERROR,
-    'no-var': ERROR,
-    'no-console': ERROR,
+    'prefer-template': severity.ERROR,
+    'no-var': severity.ERROR,
+    'no-console': severity.ERROR,
     'comma-dangle': [
-      ERROR,
+      severity.ERROR,
       {
         arrays: 'always-multiline',
         objects: 'always-multiline',
@@ -28,7 +25,7 @@ module.exports = {
       },
     ],
     'no-multiple-empty-lines': [
-      ERROR,
+      severity.ERROR,
       {
         max: 2,
         maxEOF: 1,
@@ -37,12 +34,10 @@ module.exports = {
 
     // eslint-unicorn rules
     'unicorn/prevent-abbreviations': [
-      ERROR,
+      severity.ERROR,
       {
-        whitelist: {
+        allowList: {
           env: true,
-          req: true,
-          res: true,
           ref: true,
           passReqToCallback: true,
         },
@@ -51,16 +46,18 @@ module.exports = {
 
     // eslint prettier rules
     'prettier/prettier': [
-      ERROR,
+      severity.ERROR,
       {
-        printWidth: 120,
+        printWidth: 100,
         tabWidth: 2,
         useTabs: false,
         semi: false,
         singleQuote: true,
         quoteProps: 'as-needed',
+        jsxSingleQuote: true,
         trailingComma: 'es5',
         bracketSpacing: true,
+        jsxBracketSameLine: false,
         arrowParens: 'avoid',
       },
     ],
