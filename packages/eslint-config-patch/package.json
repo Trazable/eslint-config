@@ -1,6 +1,6 @@
 {
   "name": "@trazable/eslint-config-patch",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-rc.0",
   "publishConfig": {
     "access": "public"
   },
@@ -19,7 +19,9 @@
   "homepage": "https://github.com/Trazable/eslint-config#readme",
   "license": "ISC",
   "main": "build/index.js",
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "rollup --config rollup.config.js",
     "clean": "rm -Rf node_modules build"
