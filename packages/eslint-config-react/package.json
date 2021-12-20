@@ -1,0 +1,32 @@
+{
+  "name": "@trazable/eslint-config-react",
+  "version": "0.0.0",
+  "keywords": [
+    "eslint",
+    "trazable"
+  ],
+  "author": "trazable",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trazable/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Trazable/eslint-config/issues"
+  },
+  "homepage": "https://github.com/Trazable/eslint-config#readme",
+  "license": "ISC",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "clean": "rm -Rf node_modules build"
+  },
+  "dependencies": {
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-jest": "^24.7.0",
+    "eslint-plugin-redux-reselect": "^1.1.1",
+    "eslint-plugin-testing-library": "^3.10.2"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
